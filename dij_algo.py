@@ -50,7 +50,7 @@ for vertex in range(number_of_vertices):
       new_distance = visited_and_distance[to_visit][1] \
       + edges[to_visit][neighbor_index]
       # Updating the distance of the neighbor if its current distance
-      # is greater than the distance that has just been calculated
+      # is greater than the dista   nce that has just been calculated
       if visited_and_distance[neighbor_index][1] > new_distance:
         visited_and_distance[neighbor_index][1] = new_distance
   # Visiting the vertex found earlier
@@ -63,3 +63,4 @@ for distance in visited_and_distance:
   print("The shortest distance of ",chr(ord('a') + i),\
   " from the source vertex a is:",distance[1])
   i = i + 1
+
